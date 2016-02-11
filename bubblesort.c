@@ -22,6 +22,7 @@ int main(int argc, char const* argv[])
     for (int i = 0; i < argc - 1; i++)
         printf("%d ", nums[i]);
 
+    free(nums);
     return 0;
 }
 

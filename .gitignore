@@ -4,3 +4,4 @@
 # binaries
 *.o
 bubblesort
+mergesort

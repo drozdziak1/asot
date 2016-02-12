@@ -1,6 +1,6 @@
 CFLAGS=-Wall -g -std=c99
 
-objs:=bubblesort mergesort
+objs:=bubblesort mergesort quicksort
 
 all: $(objs)
 

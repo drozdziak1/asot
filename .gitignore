@@ -3,6 +3,4 @@
 
 # binaries
 *.o
-bubblesort
-mergesort
-quicksort
+*sort

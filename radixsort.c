@@ -12,9 +12,9 @@ int radix_len(int num); // Returns decimal digit count of a number
 /* This function returns a digit on pos position.
  * radix_digit(*something*, 1) returns the LSD.
  *
- * NOTE: Bear in mind that it's capable of
- * returning values below 0 for
- * negative numbers.
+ * NOTE: Bear in mind that it's capable
+ * of returning values below 0 for
+ * negative num arguments.
  */
 int radix_digit(int num, int pos);
 
@@ -63,7 +63,7 @@ void radixsort(int* nums, int count)
             // to get the i-th digit from j-th nums[] element,
             digit = radix_digit(nums[j], i) + 9; // compensate for negative digits with 9,
 
-            // and enqueue j-th element to the corresponding digit-th bucket.
+            // and enqueue it to the corresponding digit-th bucket.
             q_enq(buckets + digit, nums[j]);
         }
 

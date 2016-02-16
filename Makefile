@@ -1,6 +1,6 @@
 CFLAGS=-Wall -g -std=c99 -lm
 
-objs:=bubblesort mergesort quicksort insertionsort radixsort
+objs:=bubblesort mergesort quicksort insertionsort radixsort shellsort
 objs+=die.o queue.o
 
 all: $(objs)

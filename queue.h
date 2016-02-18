@@ -10,7 +10,10 @@ typedef struct Q_NODE {
 
 typedef struct QUEUE {
     q_node* head;
+    q_node* tail;
 } Queue;
+
+// TODO: a null queue global for easy queue creation
 
 void q_enq(Queue* Q, int val); // Enqueue
 int q_deq(Queue* Q);           // Dequeue
